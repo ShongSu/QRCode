@@ -1,0 +1,399 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\QREncode.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\QREncode.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 QREncode"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "QREncode 1.0 ",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_QRENCODE_DIALOG DIALOGEX 0, 0, 329, 216
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "QREncode"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,158,43,51,19
+    GROUPBOX        "电影名称",IDC_STATIC,7,7,134,30
+    EDITTEXT        IDC_EDIT1,14,18,120,14,ES_AUTOHSCROLL
+    GROUPBOX        "电话号码",IDC_STATIC,7,41,134,30
+    EDITTEXT        IDC_EDIT2,14,52,120,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "会员编号",IDC_STATIC,7,76,134,30
+    EDITTEXT        IDC_EDIT3,14,87,120,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "放映时间",IDC_STATIC,7,110,134,30
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,14,120,66,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,85,120,49,15
+    GROUPBOX        "座位号",IDC_STATIC,7,144,134,30
+    COMBOBOX        IDC_COMBO1,14,155,57,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,77,155,57,85,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "电影场次",IDC_STATIC,7,179,69,30
+    EDITTEXT        IDC_EDIT4,14,190,57,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,149,7,1,202
+    GROUPBOX        "版本号",IDC_STATIC,158,7,51,30
+    COMBOBOX        IDC_COMBO3,165,18,36,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "纠错等级",IDC_STATIC,214,7,51,30
+    COMBOBOX        IDC_COMBO4,221,18,36,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,214,43,51,19
+    GROUPBOX        "缩放比例",IDC_STATIC,270,7,51,30
+    COMBOBOX        IDC_COMBO5,277,18,36,62,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC_IMAGE,"Static",SS_BLACKFRAME,161,69,151,140
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "QREncode.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "QREncode.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_QRENCODE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_QRENCODE_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0041, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0042, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0043, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0044, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0046, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0047, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0048, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0049, 
+    IDC_COMBO1, 0x403, 2, 0
+0x004a, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO2, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xd4d7, 0xafb6, "\000" 
+    IDC_COMBO3, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO3, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO4, 0x403, 6, 0
+0x284c, 0x3725, 0x0029, 
+    IDC_COMBO4, 0x403, 7, 0
+0x284d, 0x3125, 0x2935, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0x2851, 0x3225, 0x2935, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0x2848, 0x3325, 0x2930, "\000" 
+    IDC_COMBO5, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO5, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO5, 0x403, 3, 0
+0x3032, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 QREncode(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\QREncode.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

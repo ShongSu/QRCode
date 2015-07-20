@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by QRDecode.rc
+//
+#define HIDC_STATIC                     0x8066ffff    // IDD_QRDECODE_DIALOG
