@@ -1,5 +1,5 @@
 # QRCode
-My Bachelor's project, focus on QR code encode and decode process. 
+The project focus on QR code encode and decode process. 
 
 # Description
 
